@@ -2725,5 +2725,20 @@ export default {
     show_details: 'Mostrar Detalles',
     hide_details: 'Ocultar Detalles',
     load_more: 'Cargar Más'
-  }
+  },
+  insurance_providers: {
+      add: 'Agregar proveedor de seguro',
+      edit: 'Editar proveedor de seguro',
+      created: 'Proveedor de seguro creado exitosamente',
+      updated: 'Proveedor de seguro actualizado exitosamente',
+      deleted: 'Proveedor de seguro eliminado exitosamente',
+      delete_message: '¿Está seguro de que desea eliminar este proveedor de seguro?',
+      selected_delete_message: '¿Está seguro de que desea eliminar los proveedores de seguro seleccionados?',
+      name: 'Nombre del proveedor',
+      payor_id: 'ID del pagador',
+      fax_number: 'Número de fax',
+      phone_support: 'Teléfono de soporte',
+      mailing_address: 'Dirección de envío',
+      is_active: 'Estado activo',
+  },
 };
