@@ -77,8 +77,9 @@
                             <template v-if="column.dataIndex === 'patient'">
                                 <div class="flex items-center gap-3">
                                     <div class="relative">
-                                        <user-info isClickable @onClick="navigateToPatientDetails(record)" :user="record.user" :avatarSize="48" :showEmail="true" />
-                                        <a-badge 
+                                        <user-info :user="record.user" :avatarSize="48" :showEmail="true" />
+                                        <!-- isClickable @onClick="navigateToPatientDetails(record)" -->
+                                        <!-- <a-badge 
                                             v-if="record.unread_messages_count > 0"
                                             :count="record.unread_messages_count"
                                             :number-style="{ backgroundColor: '#52c41a', fontSize: '10px', minWidth: '18px', height: '18px', lineHeight: '18px' }"
@@ -89,7 +90,7 @@
                                             <MessageOutlined 
                                                 class="text-sm text-blue-500"
                                             />
-                                        </a-badge>
+                                        </a-badge> -->
                                     </div>
                                 </div>
                             </template>
