@@ -104,7 +104,7 @@
                         <AppstoreAddOutlined />
                         <span>{{ $t("menu.treatment_types") }}</span>
                     </a-menu-item>
-                    <a-menu-item
+                    <!-- <a-menu-item
                         key="rooms"
                         v-if="
                             permsArray.includes('rooms_view') ||
@@ -118,8 +118,8 @@
                     >
                         <ApartmentOutlined />
                         <span>{{ $t("menu.rooms") }}</span>
-                    </a-menu-item>
-                    <a-menu-item
+                    </a-menu-item> -->
+                    <!-- <a-menu-item
                         key="clinic_locations"
                         v-if="
                             permsArray.includes('clinic_locations_view') ||
@@ -135,7 +135,7 @@
                     >
                         <ShopOutlined />
                         <span>{{ $t("menu.clinic_locations") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
                     <a-menu-item
                         key="insurance_providers"
                         v-if="
@@ -167,7 +167,7 @@
                             <span>{{ $t("menu.system_catalog") }}</span>
                         </span>
                     </template>
-                    <a-menu-item
+                    <!-- <a-menu-item
                         key="patient_file_types"
                         v-if="
                             permsArray.includes('patient_file_types_view') ||
@@ -183,7 +183,7 @@
                     >
                         <TagsOutlined />
                         <span>{{ $t("menu.patient_file_types") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
                     <a-menu-item
                         key="item_categories"
                         v-if="
@@ -274,7 +274,7 @@
                     </template>
                     {{ $t("menu.currencies") }}
                 </a-menu-item>
-                <a-menu-item
+                <!-- <a-menu-item
                     key="email_templates"
                     v-if="
                         permsArray.includes('email_templates_view') ||
@@ -292,8 +292,8 @@
                         <MailOutlined />
                     </template>
                     {{ $t("menu.email_templates") }}
-                </a-menu-item>
-                <a-menu-item
+                </a-menu-item> -->
+                <!-- <a-menu-item
                     key="email_settings"
                     v-if="
                         permsArray.includes('email_edit') ||
@@ -311,8 +311,8 @@
                         <MailOutlined />
                     </template>
                     {{ $t("menu.email_settings") }}
-                </a-menu-item>
-                <a-menu-item
+                </a-menu-item> -->
+                <!-- <a-menu-item
                     key="landing_page"
                     v-if="
                         appSetting.enable_landing_page &&
@@ -331,7 +331,7 @@
                         <GlobalOutlined />
                     </template>
                     {{ $t("menu.landing_page_settings") }}
-                </a-menu-item>
+                </a-menu-item> -->
             </a-menu>
         </perfect-scrollbar>
     </div>

@@ -479,7 +479,7 @@
                 </a-form>
             </a-tab-pane>
 
-            <a-tab-pane
+            <!-- <a-tab-pane
                 key="schedule"
                 :tab="$t('doctors.schedule')"
                 :disabled="addEditType == 'add'"
@@ -533,24 +533,24 @@
                         :rules="rules"
                     />
                 </a-form>
-            </a-tab-pane>
+            </a-tab-pane> -->
 
-            <a-tab-pane key="holidays" :disabled="addEditType == 'add'">
+            <!-- <a-tab-pane key="holidays" :disabled="addEditType == 'add'">
                 <template #tab>
                     {{ $t("doctors.holidays") }}
                 </template>
                 <HolidaysTable :doctorId="selectedDoctorId" />
-            </a-tab-pane>
+            </a-tab-pane> -->
 
-            <a-tab-pane key="breaks" :disabled="addEditType == 'add'">
+            <!-- <a-tab-pane key="breaks" :disabled="addEditType == 'add'">
                 <template #tab>
                     {{ $t("doctors.breaks") }}
                 </template>
                 <BreaksTable :doctorId="selectedDoctorId" />
-            </a-tab-pane>
+            </a-tab-pane> -->
 
             <!-- Clinic Access Tab -->
-            <a-tab-pane
+            <!-- <a-tab-pane
                 key="clinic_access"
                 :tab="$t('menu.clinics')"
                 :disabled="addEditType === 'add'"
@@ -561,7 +561,7 @@
                     @update:clinics="handleClinicsUpdate"
                     @update:defaultClinicId="handleDefaultClinicUpdate"
                 />
-            </a-tab-pane>
+            </a-tab-pane> -->
         </a-tabs>
         <template #footer>
             <a-button

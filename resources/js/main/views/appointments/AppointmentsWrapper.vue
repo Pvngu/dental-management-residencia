@@ -64,7 +64,7 @@
     </AdminPageHeader>
     <admin-page-table-content>
         <!-- View Tabs -->
-        <a-row class="mt-5">
+        <!-- <a-row class="mt-5">
             <a-col :span="24">
                 <a-tabs
                     v-model:activeKey="activeTab"
@@ -89,17 +89,9 @@
                             </span>
                         </template>
                     </a-tab-pane>
-                    <!-- <a-tab-pane key="calendar">
-                        <template #tab>
-                            <span>
-                                <CalendarOutlined />
-                                {{ $t("appointments.calendar_view") }}
-                            </span>
-                        </template>
-                    </a-tab-pane> -->
                 </a-tabs>
             </a-col>
-        </a-row>
+        </a-row> -->
         
         <!-- Content rendered via router -->
         <router-view></router-view>

@@ -61,14 +61,14 @@
                             </span>
                         </template>
                     </a-tab-pane>
-                    <a-tab-pane key="patient_files">
+                    <!-- <a-tab-pane key="patient_files">
                         <template #tab>
                             <span>
                                 <FileOutlined />
                                 {{ $t("menu.patient_files") }}
                             </span>
                         </template>
-                    </a-tab-pane>
+                    </a-tab-pane> -->
                 </a-tabs>
             </a-col>
         </a-row>

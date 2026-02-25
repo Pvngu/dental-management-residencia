@@ -27,7 +27,7 @@ class CompanyTableSeeder extends Seeder
 
         $faker = \Faker\Factory::create();
 
-        $enLang = Lang::where('key', 'en')->first();
+        $enLang = Lang::where('key', 'es')->first();
 
         $adminCompany = new Company();
         $adminCompany->name = '800dent';

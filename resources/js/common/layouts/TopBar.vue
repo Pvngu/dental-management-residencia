@@ -60,7 +60,7 @@
                         </template>
 
                         <!-- Current Clinic Display -->
-                        <a-tag v-if="currentClinicName" color="blue">
+                        <!-- <a-tag v-if="currentClinicName" color="blue">
                             {{ currentClinicName }}
                         </a-tag>
 
@@ -80,7 +80,7 @@
                         </a-button>
                         <DentistAttendanceModal v-if="selectedClinicId && selectedClinicId !== 'all'" />
                         <Notifications />
-                        <a-divider type="vertical" />
+                        <a-divider type="vertical" /> -->
                         <a-button
                             type="link"
                             @click="

@@ -23,7 +23,7 @@
             />
         </div>
         <div v-else>
-            <img
+            <!-- <img
                 :style="{
                     height: '60px',
                     paddingLeft: appSetting.rtl ? '0px' : '30px',
@@ -34,7 +34,8 @@
                     marginRight: appSetting.rtl ? '10px' : '0px',
                 }"
                 :src="appSetting.light_logo_url"
-            />
+            /> -->
+            <h1 class="text-xl font-bold mx-6">Sistema Clinico</h1>
             <CloseOutlined
                 v-if="innerWidth <= 991"
                 :style="{
@@ -96,7 +97,7 @@
                         <span>{{ $t("menu.calendar") }}</span>
                     </a-menu-item>
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('admin') ||
                             permsArray.includes('message_center_view')
@@ -113,7 +114,7 @@
                     >
                         <MessageOutlined />
                         <span>{{ $t("menu.message_center") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
                     <LeftSideBarMainHeading
                         v-if="
@@ -176,7 +177,7 @@
                             () => {
                                 menuSelected();
                                 $router.push({
-                                    name: 'admin.appointments.today',
+                                    name: 'admin.appointments.table',
                                 });
                             }
                         "
@@ -186,7 +187,7 @@
                         <span>{{ $t("menu.appointments") }}</span>
                     </a-menu-item>
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('open_cases_view') ||
                             permsArray.includes('admin')
@@ -203,9 +204,9 @@
                     >
                         <AlertOutlined />
                         <span>{{ $t("menu.open_cases") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('medicine_view') ||
                             permsArray.includes('admin')
@@ -222,9 +223,9 @@
                     >
                         <MedicineBoxOutlined />
                         <span>{{ $t("menu.medicines") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('rooms_view') ||
                             permsArray.includes('admin')
@@ -241,17 +242,17 @@
                     >
                         <LayoutOutlined />
                         <span>{{ $t("menu.rooms") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
-                    <LeftSideBarMainHeading
+                    <!-- <LeftSideBarMainHeading
                         v-if="
                             permsArray.includes('admin')
                         "
                         :title="$t('menu.resources_and_logistics')"
                         :visible="menuCollapsed"
-                    />
+                    /> -->
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('inventory_view') ||
                             permsArray.includes('admin')
@@ -266,9 +267,9 @@
                     >
                         <AppstoreOutlined />
                         <span>{{ $t("menu.inventory") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('faxes_view') ||
                             permsArray.includes('admin')
@@ -285,9 +286,9 @@
                     >
                         <PrinterOutlined />
                         <span>{{ $t("menu.fax_center") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('postal_receive_view') ||
                             permsArray.includes('postal_dispatch_view') ||
@@ -305,14 +306,14 @@
                     >
                         <MailOutlined />
                         <span>{{ $t("menu.mail_management") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
-                    <LeftSideBarMainHeading
+                    <!-- <LeftSideBarMainHeading
                         :title="$t('menu.administration_and_finance')"
                         :visible="menuCollapsed"
-                    />
+                    /> -->
 
-                    <a-sub-menu
+                    <!-- <a-sub-menu
                         key="sales_menu"
                         v-if="
                             permsArray.includes('sales_view') ||
@@ -375,9 +376,9 @@
                             <ShopOutlined />
                             <span>{{ $t("menu.point_of_sale") }}</span>
                         </a-menu-item>
-                    </a-sub-menu>
+                    </a-sub-menu> -->
 
-                    <a-sub-menu
+                    <!-- <a-sub-menu
                         key="expenses"
                         v-if="
                             permsArray.includes('expenses_view') ||
@@ -443,9 +444,9 @@
                             <FileTextOutlined />
                             <span>{{ $t("menu.invoices") }}</span>
                         </a-menu-item>
-                    </a-sub-menu>
+                    </a-sub-menu> -->
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="appSetting.x_admin_id == user.xid"
                         @click="
                             () => {
@@ -459,7 +460,7 @@
                     >
                         <DollarCircleOutlined />
                         <span>{{ $t("menu.subscription") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
                     <LeftSideBarMainHeading
                         :title="permsArray.includes('admin') || permsArray.includes('users_view') ? $t('menu.staff_and_system') : $t('menu.system')"
@@ -483,7 +484,7 @@
                         <span>{{ $t("menu.staff_members") }}</span>
                     </a-menu-item>
 
-                    <a-menu-item
+                    <!-- <a-menu-item
                         v-if="
                             permsArray.includes('activity_log_view') ||
                             permsArray.includes('admin')
@@ -500,7 +501,7 @@
                     >
                         <HistoryOutlined />
                         <span>{{ $t("menu.activity_log") }}</span>
-                    </a-menu-item>
+                    </a-menu-item> -->
 
                     <component
                         v-for="(appModule, index) in appModules"

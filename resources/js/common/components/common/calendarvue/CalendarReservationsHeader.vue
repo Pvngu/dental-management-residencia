@@ -80,7 +80,7 @@
                         </a-button>
                         <template #overlay>
                             <a-menu :selectedKeys="[viewMode]">
-                                <a-menu-item
+                                <!-- <a-menu-item
                                     key="day"
                                     @click="$emit('update:viewMode', 'day')"
                                 >
@@ -97,7 +97,7 @@
                                         <CalendarOutlined />
                                         {{ $t("calendar.week") }}
                                     </div>
-                                </a-menu-item>
+                                </a-menu-item> -->
                                 <a-menu-item
                                     key="month"
                                     @click="$emit('update:viewMode', 'month')"
@@ -107,7 +107,7 @@
                                         Month
                                     </div>
                                 </a-menu-item>
-                                <a-menu-item
+                                <!-- <a-menu-item
                                     key="agenda"
                                     @click="$emit('update:viewMode', 'agenda')"
                                 >
@@ -115,7 +115,7 @@
                                         <ProfileOutlined />
                                         Agenda
                                     </div>
-                                </a-menu-item>
+                                </a-menu-item> -->
                             </a-menu>
                         </template>
                     </a-dropdown>

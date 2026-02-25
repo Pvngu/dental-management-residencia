@@ -2,7 +2,7 @@
     <div class="flex min-h-screen flex-col items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8">
         <!-- Logo -->
         <div class="flex justify-center">
-            <img class="h-[80px]" src="/images/light.svg" alt="800dent logo">
+            <h1 class="text-2xl font-bold text-gray-800">Sistema Dental</h1>
         </div>
 
         <!-- Form Container -->

@@ -14,7 +14,7 @@ export default defineConfig({
                 'resources/js/landing.js'
             ],
             refresh: true,
-            detectTls: 'new-800dent.test'
+            detectTls: 'dental-management-residencia.test'
         }),
         tailwindcss(),
         vue({

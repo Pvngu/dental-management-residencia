@@ -102,7 +102,7 @@
                             </span>
                         </template>
                     </a-tab-pane>
-                    <a-tab-pane key="schedules">
+                    <!-- <a-tab-pane key="schedules">
                         <template #tab>
                             <span>
                                 <ScheduleOutlined />
@@ -125,7 +125,7 @@
                                 {{ $t("menu.doctor_breaks") }}
                             </span>
                         </template>
-                    </a-tab-pane>
+                    </a-tab-pane> -->
                 </a-tabs>
             </a-col>
         </a-row>
