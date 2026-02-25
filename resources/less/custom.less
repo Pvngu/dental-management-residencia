@@ -1,0 +1,309 @@
+.bg-setting-sidebar {
+    background-color: white;
+}
+
+// Table
+.table-responsive .ant-table-content {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-responsive .ant-table-content .ant-table-cell,
+.table-responsive .ant-table-content tbody td,
+.table-responsive .ant-table-body td {
+    white-space: nowrap;
+}
+
+// Tab
+.ant-tabs-bar {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+// Button
+.anticon svg {
+    display: block!important;
+}
+
+// Form Input Required
+.required label::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 16px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+}
+
+.col-border-right {
+    border-right: 1px solid #f0f0f0;
+}
+
+// Small Text Message
+.small-text-message {
+    color: #7c8db5 !important;
+}
+
+// User Dashboard
+.dashboard-container {
+    min-height: calc(100vh - 400px);
+}
+
+.front-sidebar {
+    min-height: 100vh;
+}
+
+*, ::after, ::before, ::backdrop, ::file-selector-button  {
+    border: 0;
+}
+
+// For top subheader category
+.top-dropdown-box {
+    .ant-dropdown-content {
+        margin-top: 13px;
+        min-width: 200px;
+    }
+
+    li {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .ant-menu-submenu-title {
+        padding-left: 50px;
+    }
+}
+
+.categories-page-lefbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 25px;
+    border: 0px;
+
+    .ant-menu-sub.ant-menu-inline {
+        background: #fff;
+    }
+}
+
+.category-page-container {
+    min-height: calc(100vh - 400px);
+}
+
+// Content Area
+.page-content-sub-header {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+// .page-content-container {
+//     margin: 10px 16px 0;
+//     min-height: calc(100vh - 165px);
+// }
+
+// End Content Area
+
+.no-border-radius {
+    border-radius: 0px !important;
+}
+
+.light_theme {
+    .bg-white {
+        background: #fff;
+    }
+
+    .bg-setting-sidebar {
+        background: #fff;
+    }
+
+    .bg-color {
+        background: #fff;
+    }
+
+    .bt-1 {
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .bb-1 {
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .sidebar-right-border {
+        border-right: 1px solid #f0f0f0;
+    }
+
+    .breadcrumb-left-border {
+        border-left: none !important;
+    }
+}
+
+// For Dart Theme
+.dark_theme {
+    .bg-white {
+        background: #1f1f1f;
+    }
+
+    .bg-setting-sidebar {
+        background: #141414;
+    }
+
+    .bg-color {
+        background: transparent !important;
+    }
+
+    .bt-1 {
+        border-top: 1px solid #434343;
+    }
+
+    .bb-1 {
+        border-bottom: 1px solid #434343;
+    }
+
+    .setting-sidebar {
+        border: 1px solid #303030;
+    }
+
+    .sidebar-right-border {
+        border-right: 1px solid #303030;
+    }
+
+    .breadcrumb-left-border {
+        border-left: none !important;
+    }
+}
+
+.ant-modal-content {
+    padding: 0px !important;
+}
+.ant-modal-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 16px 24px;
+    margin-bottom: 0px !important;
+}
+
+.ant-modal-body {
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.5715;
+    padding: 24px;
+}
+
+.ant-modal-footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 16px;
+    margin-top: 0px !important;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.cursor-default {
+    cursor: default !important;
+}
+
+.font-small {
+    font-size: 0.7rem;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.modern-drawer {
+    padding-right: 10px;
+}
+
+.modern-drawer .ant-drawer-content-wrapper {
+    padding-block: 12px;
+    padding-right: 12px;
+    box-shadow: none;
+}
+
+.modern-drawer .ant-drawer-content-wrapper .ant-drawer-content {
+    border-radius: 12px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.special-drawer-form, .special-drawer-form-sale {
+    position: absolute;
+    z-index: 25;
+    max-height: 100vh;
+}
+
+.special-drawer-form {
+    top: 94px;
+}
+
+.special-drawer-form-sale {
+    top: 220px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .special-drawer-form, .special-drawer-form-sale {
+        z-index: 999 !important;
+    }
+
+    .special-drawer-form .ant-drawer-content-wrapper, 
+    .special-drawer-form-sale .ant-drawer-content-wrapper {
+        width: 100% !important;
+    }
+}
+
+.special-drawer-form .ant-drawer-content-wrapper,
+.special-drawer-form-sale .ant-drawer-content-wrapper {
+    box-shadow: none !important;
+}
+
+.table-header {
+    padding-inline: 8px;
+}
+
+// Table filters
+
+.table-tab-filters.ant-tabs-top >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-zbk4qk).ant-tabs-bottom >.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-zbk4qk).ant-tabs-top >div>.ant-tabs-nav::before, :where(.css-dev-only-do-not-override-zbk4qk).ant-tabs-bottom >div>.ant-tabs-nav::before {
+    border-bottom: 0 !important;
+}
+.table-tab-filters .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.table-tab-filters .ant-tabs-nav .ant-tabs-nav-wrap.ant-tabs-nav-wrap-ping-right, 
+.table-tab-filters .ant-tabs-nav .ant-tabs-nav-wrap ant-tabs-nav-wrap-ping-left {
+    justify-content: left !important;
+}
+
+.table-tab-filters .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab {
+    background: unset;
+    border: unset;
+}
+
+:where(.css-dev-only-do-not-override-zbk4qk).table-tab-filters.ant-tabs .ant-tabs-tab-btn {
+    padding-inline: 12px;
+    padding-block: 8px;
+    border-radius: 8px;
+}
+
+:where(.css-dev-only-do-not-override-zbk4qk).table-tab-filters.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    text-shadow: unset;
+    background-color: rgb(249 250 251);
+    font-weight: 600;
+}
+
+:where(.css-dev-only-do-not-override-zbk4qk).table-tab-filters >.ant-tabs-nav .ant-tabs-tab, :where(.css-dev-only-do-not-override-zbk4qk).table-tab-filters >div>.ant-tabs-nav .ant-tabs-tab {
+    padding-inline: 4px;
+    padding-block: 6px;
+}
+
+// End Table filters

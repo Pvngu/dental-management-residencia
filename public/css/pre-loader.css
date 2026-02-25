@@ -1,0 +1,13 @@
+html {
+    font-family: sans-serif;
+}
+
+.loading-app-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8ff;
+}

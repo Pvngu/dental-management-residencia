@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@source "../views";
+
+@theme {
+    --color-primary: #1677ff;
+    --color-primary-hover: rgba(22, 119, 255, 0.9);
+    --primary-light: rgba(22, 119, 255, 0.2);
+}

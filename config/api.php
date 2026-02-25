@@ -1,0 +1,48 @@
+<?php
+
+return [
+
+	/**
+	 * Default number of records to return when no limit is specified
+	 */
+	'defaultLimit' => 10,
+
+	/**
+	 * Maximum number of records to return in single request. This limit is used
+	 * when user enters large number in limit parameter of the request
+	 */
+	'maxLimit' => 10000,
+
+	/*
+     * Add allow cross origin headers. It is recommended by APIs to allow cross origin
+     * requests. But, you can disable it.
+     */
+	'cors' => true,
+
+	/**
+	 * Which headers are allowed in CORS requests
+	 */
+	'cors_headers' => ['Authorization', 'Content-Type'],
+
+	/**
+	 * List of fields that should not be considered while saving a model
+	 */
+	'excludes' => ['_token', 'permissions', 'image_url', 'product_items', 'removed_items', 'success'],
+
+	/**
+	 * Prefix for all the routes
+	 */
+	'prefix' => 'api',
+
+	/**
+	 * Default version for the API. Set null to disable versions
+	 */
+	'default_version' => 'v1',
+
+	/**
+	 * External CRM API Token
+	 * This token is used to authenticate requests from external CRM systems
+	 * Generate a secure token and add it to your .env file as EXTERNAL_CRM_API_TOKEN
+	 */
+	'external_crm_token' => env('EXTERNAL_CRM_API_TOKEN', ''),
+];
